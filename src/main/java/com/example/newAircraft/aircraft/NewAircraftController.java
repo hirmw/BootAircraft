@@ -25,6 +25,8 @@ public class NewAircraftController {
       return aircraftService.findAll();
     }
 
+    //todo @DeleteMapping()
+
 //    @GetMapping(path = "{aircraftId}")
 //    public Aircraft getAircraft(@PathVariable("aircraftId") Integer aircraftID){
 //        return AIRCRAFT_LIST.stream().filter(aircraft -> aircraftID.equals(aircraft.getAircraftID()))
