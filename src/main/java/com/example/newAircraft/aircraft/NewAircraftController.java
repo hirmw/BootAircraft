@@ -25,7 +25,10 @@ public class NewAircraftController {
       return aircraftService.findAll();
     }
 
-    //todo @DeleteMapping()
+    @DeleteMapping(path = "{aircraftid}")
+    public void deleteAircraft(@PathVariable("aircraftid")  Long id){
+        aircraftService.delAircraftRepo(id);
+    }
 
 //    @GetMapping(path = "{aircraftId}")
 //    public Aircraft getAircraft(@PathVariable("aircraftId") Integer aircraftID){

@@ -28,16 +28,15 @@ public class Aircraft {
             generator = "aircraft_sequence"
     )
 
-    private Integer aircraftID;
+    private Long aircraftID;
     private String aircraftModel;
 
-    public Aircraft(Integer aircraftID, String aircraftModel) {
-        this.aircraftID = aircraftID;
+    public Aircraft( String aircraftModel) {
         this.aircraftModel = aircraftModel;
     }
 
 
-    public Integer getAircraftID() {
+    public Long getAircraftID() {
         return aircraftID;
     }
     public String getAircraftModel() {

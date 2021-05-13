@@ -28,4 +28,8 @@ public class AircraftService {
     public void addAircraft(Aircraft aircraft){
         aircraftRepo.save(aircraft);
     }
+
+    public void delAircraftRepo(Long aircraftId) {
+         aircraftRepo.deleteById(aircraftId);
+    }
 }

@@ -22,7 +22,7 @@ public class Enterdata implements CommandLineRunner {
 
         logger.info("initializing users");
 
-        var a1 = new Aircraft(1,"787");
+        var a1 = new Aircraft("787");
         aeroRepository.save(a1);
 
     }
