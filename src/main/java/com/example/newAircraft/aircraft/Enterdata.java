@@ -32,12 +32,12 @@ public class Enterdata implements CommandLineRunner {
 
         OpenSkyApi api = new OpenSkyApi("rmw2020","Labrad0r");
         OpenSkyStates os = api.getStates(0, null,
-                new OpenSkyApi.BoundingBox(45.8389, 47.8229, 5.9962, 10.5226));
+                new OpenSkyApi.BoundingBox(51.27, 51.67, -0.60, 0.19));
 
 
         ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
         String json = ow.writeValueAsString(os);
-        logger.info("hello opensky" + os);
+        logger.info("hello opensky" + json);
 
 
     }
