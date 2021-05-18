@@ -37,7 +37,7 @@ public class Enterdata implements CommandLineRunner {
 
         ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
         String json = ow.writeValueAsString(os);
-        logger.info("hello opensky" + os.);
+        logger.info("hello opensky" + os);
 
 
     }
